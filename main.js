@@ -1,5 +1,3 @@
-// main.js
-
 function saveCredentials() {
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
@@ -44,12 +42,12 @@ function clearCredentials() {
   document.getElementById("output").innerHTML = "<p>All credentials cleared!</p>";
 }
 
-// 👇 make functions accessible to onclick in HTML
+
 window.saveCredentials = saveCredentials;
 window.showCredentials = showCredentials;
 window.clearCredentials = clearCredentials;
 
-// main.js
+
 document.getElementById("btnSave").addEventListener("click", saveCredentials);
 document.getElementById("btnShow").addEventListener("click", showCredentials);
 document.getElementById("btnClear").addEventListener("click", clearCredentials);
